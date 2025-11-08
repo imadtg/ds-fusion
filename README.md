@@ -40,6 +40,15 @@ pip install -r requirements.txt
         *   Example: `m1(A) = 0.6`
         *   Example: `m2(B, C) = 0.4`
         *   To represent the whole frame, you can use `theta`, `Θ`, or `Omega`: `m1(theta) = 0.5`.
+    * **Remarques importantes** :
+        * Le nom de la masse doit correspondre à celui attendu (m1, m2, …). Si vous avez défini “2 masses” utilisez m1 et m2 (pas “m” seul).
+
+        * Le parser actuel accepte les synonymes listés dans parse_subset : '∅', 'Ø', 'empty', '{}', 'Θ', 'Omega', 'theta', 'THETA'.
+
+        * Utilisez le point comme séparateur décimal : 0.5 (pas 0,5). Sinon l’entrée ne sera pas reconnue.
+
+- Vous pouvez aussi écrire explicitement tous les éléments entre accolades si vous préférez {A,B,C}.
+
     *   Click **Insert**. The defined masses will appear in the "Defined Masses" section.
     *   You can **Import** mass functions from a CSV file.
 
